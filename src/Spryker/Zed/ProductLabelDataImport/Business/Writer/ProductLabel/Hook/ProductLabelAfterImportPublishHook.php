@@ -24,9 +24,6 @@ class ProductLabelAfterImportPublishHook implements DataImporterAfterImportInter
      */
     protected const ID_DEFAULT = 0;
 
-    /**
-     * @return void
-     */
     public function afterImport(): void
     {
         DataImporterPublisher::addEvent(static::EVENT_PRODUCT_LABEL_DICTIONARY_PUBLISH, static::ID_DEFAULT);

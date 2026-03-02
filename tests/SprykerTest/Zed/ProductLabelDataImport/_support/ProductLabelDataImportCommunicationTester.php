@@ -29,11 +29,6 @@ class ProductLabelDataImportCommunicationTester extends Actor
 {
     use _generated\ProductLabelDataImportCommunicationTesterActions;
 
-    /**
-     * @param \Generated\Shared\Transfer\ProductAbstractTransfer $productAbstractTransfer
-     *
-     * @return void
-     */
     public function removeProductLabelProductAbstractRelationsByProductAbstractTransfer(
         ProductAbstractTransfer $productAbstractTransfer
     ): void {
@@ -42,9 +37,6 @@ class ProductLabelDataImportCommunicationTester extends Actor
             ->delete();
     }
 
-    /**
-     * @return \Orm\Zed\ProductLabel\Persistence\SpyProductLabelProductAbstractQuery
-     */
     protected function createProductLabelProductAbstractQuery(): SpyProductLabelProductAbstractQuery
     {
         return SpyProductLabelProductAbstractQuery::create();

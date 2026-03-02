@@ -16,11 +16,6 @@ use Spryker\Zed\ProductLabelDataImport\Business\Writer\ProductLabel\DataSet\Prod
 
 class ProductLabelAttributeWriterStep extends PublishAwareStep implements DataImportStepInterface
 {
-    /**
-     * @param \Spryker\Zed\DataImport\Business\Model\DataSet\DataSetInterface $dataSet
-     *
-     * @return void
-     */
     public function execute(DataSetInterface $dataSet): void
     {
         if (!$dataSet[ProductLabelDataSetInterface::COL_ID_PRODUCT_LABEL]) {

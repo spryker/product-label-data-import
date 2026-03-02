@@ -5,7 +5,7 @@
  * For full license information, please view the LICENSE file that was distributed with this source code.
  */
 
-namespace Spryker\ProductLabelDataImport\tests\SprykerTest\Zed\ProductLabelDataImport\Communication\Plugin;
+namespace SprykerTest\Zed\ProductLabelDataImport\Communication\Plugin;
 
 use Codeception\Test\Unit;
 use Generated\Shared\Transfer\DataImporterConfigurationTransfer;
@@ -17,9 +17,6 @@ use Spryker\Zed\ProductLabelDataImport\Communication\Plugin\ProductLabelStoreDat
 /**
  * Auto-generated group annotations
  *
- * @group Spryker
- * @group ProductLabelDataImport
- * @group tests
  * @group SprykerTest
  * @group Zed
  * @group ProductLabelDataImport
@@ -40,9 +37,6 @@ class ProductLabelStoreDataImportPluginTest extends Unit
      */
     protected $tester;
 
-    /**
-     * @return void
-     */
     public function testImportImportsProductLabelStore(): void
     {
         //Arrange

@@ -36,9 +36,6 @@ class ProductLabelDataImportPluginTest extends Unit
      */
     protected $tester;
 
-    /**
-     * @return void
-     */
     public function testImportImportsProductLabel(): void
     {
         //Arrange

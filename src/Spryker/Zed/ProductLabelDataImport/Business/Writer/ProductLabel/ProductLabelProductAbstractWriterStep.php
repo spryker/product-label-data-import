@@ -29,11 +29,6 @@ class ProductLabelProductAbstractWriterStep extends PublishAwareStep implements 
      */
     protected const EVENT_PRODUCT_ABSTRACT_PUBLISH = 'Product.product_abstract.publish';
 
-    /**
-     * @param \Spryker\Zed\DataImport\Business\Model\DataSet\DataSetInterface $dataSet
-     *
-     * @return void
-     */
     public function execute(DataSetInterface $dataSet): void
     {
         if (!isset($dataSet[ProductLabelDataSetInterface::COL_PRODUCT_ABSTRACT_IDS])) {

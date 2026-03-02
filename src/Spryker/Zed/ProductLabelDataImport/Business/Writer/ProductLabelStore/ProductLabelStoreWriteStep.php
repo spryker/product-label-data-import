@@ -22,11 +22,6 @@ class ProductLabelStoreWriteStep extends PublishAwareStep implements DataImportS
      */
     protected const EVENT_PRODUCT_LABEL_STORE_PUBLISH = 'ProductLabel.product_label_store.publish';
 
-    /**
-     * @param \Spryker\Zed\DataImport\Business\Model\DataSet\DataSetInterface $dataSet
-     *
-     * @return void
-     */
     public function execute(DataSetInterface $dataSet): void
     {
         $productLabelStoreEntity = SpyProductLabelStoreQuery::create()

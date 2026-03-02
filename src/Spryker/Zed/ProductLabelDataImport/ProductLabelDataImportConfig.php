@@ -57,17 +57,11 @@ class ProductLabelDataImportConfig extends DataImportConfig
         );
     }
 
-    /**
-     * @return string
-     */
     protected function getModuleDataImportDirectoryPath(): string
     {
         return $this->getModuleRoot() . 'data' . DIRECTORY_SEPARATOR . 'import' . DIRECTORY_SEPARATOR;
     }
 
-    /**
-     * @return string
-     */
     protected function getModuleRoot(): string
     {
         return realpath(

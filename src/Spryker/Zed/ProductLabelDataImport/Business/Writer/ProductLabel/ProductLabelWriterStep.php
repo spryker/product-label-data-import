@@ -15,11 +15,6 @@ use Spryker\Zed\ProductLabelDataImport\Business\Writer\ProductLabel\DataSet\Prod
 
 class ProductLabelWriterStep extends PublishAwareStep implements DataImportStepInterface
 {
-    /**
-     * @param \Spryker\Zed\DataImport\Business\Model\DataSet\DataSetInterface $dataSet
-     *
-     * @return void
-     */
     public function execute(DataSetInterface $dataSet): void
     {
         $productLabelEntity = SpyProductLabelQuery::create()
