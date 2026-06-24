@@ -13,16 +13,22 @@ use Spryker\Zed\DataImport\DataImportConfig;
 class ProductLabelDataImportConfig extends DataImportConfig
 {
     /**
+     * @api
+     *
      * @var string
      */
     public const IMPORT_TYPE_PRODUCT_LABEL = 'product-label';
 
     /**
+     * @api
+     *
      * @var string
      */
     public const IMPORT_TYPE_PRODUCT_LABEL_STORE = 'product-label-store';
 
     /**
+     * @api
+     *
      * @var int
      */
     public const MODULE_ROOT_DIRECTORY_LEVEL = 4;
